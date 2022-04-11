@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+    "id": 1,
+    "name": "Asus Rogue Phone",
+    "price": 5000
+    },
+
+    {
+    "id": 2,
+    "name": "Razer Gaming Series",
+    "price": 8000
+    },
+
+    {
+    "id": 3,
+    "name": "Lenovo Ideapad Gaming",
+    "price": 3500
+    },
+
+    {
+    "id": 4,
+    "name": "Acer Nitro 5",
+    "price": 5000
+    },
+
+    {
+    "id": 5,
+    "name": "Acer Predator",
+    "price": 7500
+    }
+  ]
+}
