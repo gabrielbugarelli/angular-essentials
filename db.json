@@ -49,6 +49,26 @@
       "name": "Razer Blade Pro Gaming",
       "price": 8750,
       "id": 10
+    },
+    {
+      "name": "Razer Blade Pro Gaming",
+      "price": 8750,
+      "id": 11
+    },
+    {
+      "name": "Acer Turbo Gaming",
+      "price": 8750,
+      "id": 12
+    },
+    {
+      "name": "Razer Blade Pro Gaming",
+      "price": "8750324234",
+      "id": 13
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 14
     }
   ]
 }

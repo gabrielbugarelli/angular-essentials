@@ -11,9 +11,9 @@ import { ProductService } from '../product.service';
 
 export class ProductCreateComponent implements OnInit {
 
-  mockProduct: Product = {
-    name: 'Razer Blade Pro Gaming',
-    price: 8750
+  product: Product = {
+    name: '',
+    price: null
   }
 
   constructor(
@@ -25,11 +25,11 @@ export class ProductCreateComponent implements OnInit {
   }
 
   createProduct(): void {
-    this.productService.createProduct(this.mockProduct)
+    this.productService.createProduct(this.product)
       .subscribe(() => {
         this.productService.showMessage('Operação executada com sucesso!');
         this.router.navigate(['/products']);
-      })
+    });
   }
 
   cancel(): void {
