@@ -1,1 +1,3 @@
-<p>product-read works!</p>
+<ul *ngFor="let product of products">
+  <li>{{product.name}} - {{product.price | currency: 'BRL'}}</li>
+</ul>
