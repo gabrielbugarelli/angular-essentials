@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -10,6 +11,11 @@ import { ProductService } from '../product.service';
 
 export class ProductCreateComponent implements OnInit {
 
+  mockProduct: Product = {
+    name: 'Razer Blade Pro Gaming',
+    price: 8750
+  }
+
   constructor(
     private productService: ProductService,
     private router: Router
@@ -19,7 +25,11 @@ export class ProductCreateComponent implements OnInit {
   }
 
   createProduct(): void {
-    this.productService.showMessage('Operação executada com sucesso!');
+    this.productService.createProduct(this.mockProduct)
+      .subscribe(() => {
+        this.productService.showMessage('Operação executada com sucesso!');
+        this.router.navigate(['/products']);
+      })
   }
 
   cancel(): void {

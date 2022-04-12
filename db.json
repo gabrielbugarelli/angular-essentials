@@ -29,6 +29,26 @@
       "id": 6,
       "name": "Dell Gaming Series",
       "price": 7650
+    },
+    {
+      "id": 7,
+      "name": "Dell G5 Gamer",
+      "price": 6380
+    },
+    {
+      "id": 8,
+      "name": "Avell Predathor",
+      "price": 9430.8
+    },
+    {
+      "id": 9,
+      "name": "Lenovo Legion",
+      "price": 3500
+    },
+    {
+      "name": "Razer Blade Pro Gaming",
+      "price": 8750,
+      "id": 10
     }
   ]
 }
