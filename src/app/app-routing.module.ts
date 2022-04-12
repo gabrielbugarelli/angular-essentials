@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 
 import { HomeComponent } from './views/home/home.component';
 import  { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'products', component: ProductCrudComponent}
+  { path: '', component: HomeComponent },
+  { path: 'products', component: ProductCrudComponent },
+  { path: 'products/create', component: ProductCreateComponent }
 ]
 
 @NgModule({
@@ -19,4 +21,5 @@ const routes: Routes = [
 
   exports: [ RouterModule ]
 })
+
 export class AppRoutingModule { }
