@@ -1,3 +1,17 @@
-<h1 [id]="propLegal">Este é o título da página</h1>
+<h1>Este é o título da página</h1>
 
-<button mat-raised-button color="primary" (click)="fazerAlgo()"> Clique e veja o que acontecerá 👀 </button>
+<button 
+  mat-raised-button 
+  color="primary" 
+  (click)="createProduct()"
+> 
+  Salvar 
+</button>
+
+<button 
+  mat-raised-button 
+  color="danger" 
+  (click)="cancel()"
+> 
+  Cancelar 
+</button>
