@@ -7,3 +7,13 @@ body {
   padding: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
+
+.msg-success {
+  background-color: #48BB78;
+  color: #EDF2F7;
+}
+
+.msg-error {
+  background-color: #db2525;
+  color: #EDF2F7;
+}
