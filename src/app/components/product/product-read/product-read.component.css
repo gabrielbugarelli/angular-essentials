@@ -7,5 +7,8 @@ table {
 }
 
 .delete {
+  border:none;
   color: #db2525;
+  background-color: transparent;
+  cursor: pointer;
 }

@@ -12,6 +12,11 @@ export class ProductReadComponent implements OnInit {
   products: Product[] = [];
   displayedColumns = ['name', 'price', 'action'];
 
+  product: Product = {
+    name: '',
+    price: null
+  }
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -19,5 +24,11 @@ export class ProductReadComponent implements OnInit {
       .subscribe((product) => {
         this.products = product;
     });
+  }
+
+  deleteProduct(): void {
+    this.productService.deleteProduct(1).subscribe(() => {
+      this.productService.showMessage('Produto excluído com sucesso!');
+    })
   }
 }
