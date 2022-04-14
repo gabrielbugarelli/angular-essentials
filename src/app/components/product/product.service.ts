@@ -27,30 +27,43 @@ export class ProductService {
   createProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product).pipe(
       map(obj => obj),
-      catchError(error => this.errorHandler(error))
+      catchError((error) => this.errorHandler(error))
     );
   }
 
-  errorHandler(error: any): Observable<any> {
-    return EMPTY;
-  };
-
   readAllProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.baseUrl);
+    return this.http.get<Product[]>(this.baseUrl).pipe(
+      map(obj => obj),
+      catchError((error) => this.errorHandler(error))
+    );
   }
 
   readProductById(id: number): Observable<Product> {
     const payload = `${this.baseUrl}/${id}`;
-    return this.http.get<Product>(payload);
+    return this.http.get<Product>(payload).pipe(
+      map(obj => obj),
+      catchError((error) => this.errorHandler(error))
+    );
   }
 
   updateProduct(product: Product): Observable<Product> {
     const payload = `${this.baseUrl}/${product.id}`;
-    return this.http.put<Product>(payload, product);
+    return this.http.put<Product>(payload, product).pipe(
+      map(obj => obj),
+      catchError((error) => this.errorHandler(error))
+    );
   }
 
   deleteProduct(id: number): Observable<Product> {
     const payload = `${this.baseUrl}/${id}`;
-    return this.http.delete<Product>(payload);
+    return this.http.delete<Product>(payload).pipe(
+      map(obj => obj),
+      catchError((error) => this.errorHandler(error))
+    );
   }
+
+  errorHandler(error: any): Observable<any> {
+    this.showMessage("Ocorreu um erro!", true);
+    return EMPTY;
+  };
 }
