@@ -1,27 +1,39 @@
-# AngularEssentials
+# Repositório de estudos angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+Opa e aí, beleza? Este repositório serve apenas para fins de estudos sobre Angular 13. Sinta-se a vontade para estuda-lo também.
 
-## Development server
+## Instalação do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Com o git instalado no seu computador, cole o comando no seu terminal: <br>
+``` 
+  git clone https://github.com/gabrielbugarelli/angular-essentials.git
+```
 
-## Code scaffolding
+Após isso acesse o diretório do projeto e execute digite o seguinte commando: <br>
+```
+  npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como executar o projeto
 
-## Build
+Primeiramente, execute o comando: <br>
+```
+  npm run server
+``` 
+<br>
+Este comando irá executar a fake api para o frontend consumir.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Após isso, em outra tela do terminal, execute o comando: <br>
+```
+  ng serve
+ ``` 
+-- ou -- 
+```
+  ng s
+ ```
+<br>
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Com o projeto levantado, abra o seu navegador e cole na barra de pesquisa o link: <br>
+```
+localhost:4200/
+```
