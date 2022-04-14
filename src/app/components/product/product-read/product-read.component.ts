@@ -17,7 +17,7 @@ export class ProductReadComponent implements OnInit {
     price: null
   }
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
     this.productService.readAllProducts()
